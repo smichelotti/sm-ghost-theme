@@ -27,6 +27,12 @@ node_modules
 assets/css/main.min.css
 assets/js/app.js
 
+# Dist folder
+dist
+
+# no zips
+*.zip
+
 # =========================
 # Operating System Files
 # =========================
