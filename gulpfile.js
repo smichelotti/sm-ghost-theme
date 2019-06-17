@@ -30,6 +30,7 @@ gulp.task('build-all', ['bundle-minify-js', 'styles-build'], function () {
   var source = [
     './assets/**/*',
     './partials/**/*',
+    'package.json',
     '*.hbs'
   ];
   return gulp
