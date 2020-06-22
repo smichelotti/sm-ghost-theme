@@ -2088,10 +2088,12 @@ th, td
   display: none;
 }
 
+/*
 .archive-template .extra-pagination, .tags
 {
   display: block;
 }
+*/
 
 .no-cover .tags_head
 {

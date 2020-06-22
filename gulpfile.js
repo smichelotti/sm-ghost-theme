@@ -3,6 +3,7 @@ var gulp = require('gulp'),
     concat = require('gulp-concat'),
     rename = require('gulp-rename'),
     cssmin = require('gulp-cssmin'),
+    chmod = require('gulp-chmod'),
     zip = require('gulp-zip'),
     cmq = require('gulp-combine-media-queries');
 
@@ -36,6 +37,7 @@ gulp.task('build-all', ['bundle-minify-js', 'styles-build'], function () {
   return gulp
     .src(source, {base: './'})
     .pipe(gulp.dest('dist'))
+    .pipe(chmod(0o755, true))
 		.pipe(zip('sm-ghost-theme.zip'))
 		.pipe(gulp.dest('./'));
 })
